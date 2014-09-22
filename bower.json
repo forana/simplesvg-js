@@ -1,0 +1,22 @@
+{
+  "name": "simplesvg-js",
+  "version": "1.0.0",
+  "authors": [
+    "forana <alex@alexforan.com>"
+  ],
+  "description": "Simple library for creating SVG elements client-side",
+  "main": "simplesvg.js",
+  "keywords": [
+    "svg",
+    "simple"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/forana/simplesvg-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

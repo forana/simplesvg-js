@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SimpleSVG Example</title>
+        <script src="./simplesvg.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var svg = SimpleSVG({
+                    width: "600px",
+                    height: "600px"
+                })
+                .defaults({
+                    fill: "white"
+                })
+                .line(0, 100, 600, 100)
+                .line(0, 200, 600, 200)
+                .line(0, 300, 600, 300)
+                .line(0, 400, 600, 400)
+                .defaults({
+                    fill: "blue",
+                    class: "note"
+                })
+                .circle(50, 400, 50)
+                .circle(350, 400, 50)
+                .defaults({
+                    fill: "yellow"
+                })
+                .circle(150, 350, 50)
+                .circle(450, 350, 50)
+                .circle(250, 150, 50)
+                .circle(550, 150, 50)
+
+                document.body.appendChild(svg);
+            });
+        </script>
+        <style>
+            svg {
+                background-color: #CFC;
+            }
+
+            .note:hover {
+                stroke: #F00;
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>
