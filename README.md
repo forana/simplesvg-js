@@ -1,4 +1,6 @@
-# simplesvg.js
+<svg width="600px" height="50px">
+  <text x="0px" y="40px" stroke="green" stroke-width="3" fill="#0F0" style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 36px">simplesvg-js</text>
+</svg>
 
 A very bare-bones SVG-generating library for browser usage.
 
@@ -34,7 +36,7 @@ Creates a shape consisting of coordinates in the `points` array (each item being
 
 ### `.text(string, x, y, [attrs])`
 
-Creates a text node with the contents `string` with the upper-left corner of the bounding box at (`x`, `y`).
+Creates a text node with the contents `string` with the baseline starting at (`x`, `y`).
 
 ### `.defaults(attrs)`
 
