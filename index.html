@@ -30,6 +30,21 @@
                 .circle(450, 350, 50)
                 .circle(250, 150, 50)
                 .circle(550, 150, 50)
+                .clearDefaults()
+                .defaults({
+                    stroke: "black",
+                    "stroke-width": "3px",
+                    fill: "transparent"
+                })
+                .rectangle(265, 15, 70, 70)
+                .path([[300, 0], [350, 50], [300, 100], [250, 50]], true)
+                .text("hello", 100, 500, {
+                    style: "font-size: 50px; font-family: sans-serif",
+                    fill: "#0F0",
+                    stroke: "green",
+                    transform: "rotate(45 100,500)"
+                })
+                ;
 
                 document.body.appendChild(svg);
             });
