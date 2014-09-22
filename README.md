@@ -1,6 +1,4 @@
-<svg width="600px" height="50px">
-  <text x="0px" y="40px" stroke="green" stroke-width="3" fill="#0F0" style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 36px">simplesvg-js</text>
-</svg>
+# simplesvg-js
 
 A very bare-bones SVG-generating library for browser usage.
 
