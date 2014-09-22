@@ -16,27 +16,31 @@ Creates and returns an SVG element. Useful (read: necessary) attributes to set h
 
 The remaining methods operate on this returned element, and return the same element for chaining purposes. All coordinates are numeric and absolute - no `px` required.
 
-### .circle(x, y, r, [attrs])
+### `.circle(x, y, r, [attrs])`
 
 Creates a circle at coordinates (`x`, `y`) with radius `r`.
 
-### .rectangle(x1, y1, x2, y2, [attrs])
+### `.rectangle(x, y, width, height, [attrs])`
 
-Creates a reactangle bounded by opposing corners with coordinates (`x1`, `y1`) and (`x2`, `y2`).
+Creates a reactangle with upper-left corner at (`x`, `y`) with `width` and `height`.
 
-### .line(x1, y1, x2, y2, [attrs])
+### `.line(x1, y1, x2, y2, [attrs])`
 
 Creates a line from (`x1`, `y1`) to (`x2`, `y2`).
 
-### .path(points, closed, [attrs])
+### `.path(points, closed, [attrs])`
 
 Creates a shape consisting of coordinates in the `points` array (each item being a 2-item array of the form `[x, y]`. If `closed`, the path will be closed (and thus eligible to have a `fill`).
 
-### .defaults(attrs)
+### `.text(string, x, y, [attrs])`
+
+Creates a text node with the contents `string` with the upper-left corner of the bounding box at (`x`, `y`).
+
+### `.defaults(attrs)`
 
 Sets default `attrs`. All subsequent method calls on this `svg` element will have those `attrs` applied, before any passed `attrs` (so passed overrides default). The `attrs` passed into this method will be 'inherited' into the existing defaults - any pre-existing properties not overridden by the passed `attrs` will still be set.
 
-### .clearDefaults(attrs)
+### `.clearDefaults(attrs)`
 
 Clear out any set defaults.
 
